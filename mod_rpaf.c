@@ -256,7 +256,7 @@ static int change_remote_ip(request_rec *r) {
 
              if (cfg->setport) {
                 const char *portvalue;
-                if (apr_table_get(r->headers_in, "X-Port")) {
+                if (portvalue = apr_table_get(r->headers_in, "X-Port")) {
                     r->server->port    = atoi(portvalue);
                     r->parsed_uri.port = r->server->port;
                 } else {
