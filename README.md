@@ -38,8 +38,7 @@ Sets `REMOTE_ADDR`, `HTTPS`, and `HTTP_PORT` to the values provided by an upstre
                                           X-HTTPS, or X-Forwarded-HTTPS.
 
     RPAF_SetPort     (On|Off)           - Set the server port to the header
-                                          value contained in X-Port, or
-                                          X-Forwarded-Port.
+                                          value contained in X-Port.
 
 ## Example Configuration
 
